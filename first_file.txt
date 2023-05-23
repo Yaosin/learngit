@@ -4,3 +4,12 @@ git commit -m "注释" 将文件提交至仓库
 
 git status 查看仓库状态
 git diff 查看该次修改内容
+
+git log 显示所有版本信息(该版本之前)
+git log --pretty=oneline 可查看时间线版本信息(版本号)
+在版本信息中HEAD表示当前版本
+表示过往版本使用^(如HEAD^n：表示当前版本的前n个版本)
+
+git reset --hard HEAD^ 回退上一个版本
+git reset --hard (版本号：不需要详细) 回退至该版本号
+git reflog 记录每一次命令
