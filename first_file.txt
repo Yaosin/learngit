@@ -20,3 +20,7 @@ git reset --hard HEAD <file> 撤销暂存区修改
 
 git rm <file> 删除暂存区中的文件,需要配合commit使用
 
+github上需要设置相应的主机公钥才可将文件从该主机提交至github
+git remote add origin git@github.com:Yaosin/<仓库名>.git 将本地仓库关联至github项目库中
+git push -u origin master 将本地仓库推送至github关联库中并关联
+git push origin master 简化推送
