@@ -1,6 +1,6 @@
 git init 在仓库目录中指定本地仓库
-git add 将文件添加进仓库
-git commit -m "注释" 将文件提交至仓库
+git add <file> 将文件添加进仓库
+git commit -m "注释" <file> 将文件提交至仓库
 
 git status 查看仓库状态
 git diff 查看该次修改内容
@@ -13,3 +13,8 @@ git log --pretty=oneline 可查看时间线版本信息(版本号)
 git reset --hard HEAD^ 回退上一个版本
 git reset --hard (版本号：不需要详细) 回退至该版本号
 git reflog 记录每一次命令
+
+工作区->暂存区->库
+git checkout -- (文件名) 撤销全部工作区的修改，返回上次add/commit状态
+git reset --hard HEAD <file> 撤销暂存区修改
+
